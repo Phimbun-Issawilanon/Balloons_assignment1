@@ -25,3 +25,9 @@ void setup() {
   balloon2.balloon(600,500,60,100);
   balloon3.balloon(100,50,40,60);
 }
+void draw(){
+  background(#C4F9FF);
+  balloon.move();
+  balloon2.move();
+  balloon3.move();
+}
