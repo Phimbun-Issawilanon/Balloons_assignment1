@@ -16,3 +16,6 @@ public class Balloon {
     line(pointx, pointy+(radius), pointx, linelong+pointy+(radius));  
   }
 }
+Balloon balloon = new Balloon();
+Balloon balloon2 = new Balloon();
+Balloon balloon3 = new Balloon();
