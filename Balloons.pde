@@ -19,3 +19,9 @@ public class Balloon {
 Balloon balloon = new Balloon();
 Balloon balloon2 = new Balloon();
 Balloon balloon3 = new Balloon();
+void setup() {
+  size(800, 660);
+  balloon.balloon(400,200,100,250); 
+  balloon2.balloon(600,500,60,100);
+  balloon3.balloon(100,50,40,60);
+}
