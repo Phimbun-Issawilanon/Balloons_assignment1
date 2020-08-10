@@ -10,4 +10,9 @@ public class Balloon {
     radius =radius_1;
     linelong =linelong_1;
   }  
+  public void createbollon(){
+    fill(#EFF7D9);
+    ellipse(pointx, pointy, radius*2, radius*2);
+    line(pointx, pointy+(radius), pointx, linelong+pointy+(radius));  
+  }
 }
