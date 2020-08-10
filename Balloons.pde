@@ -5,24 +5,33 @@
 public class Balloon {
   float pointx,pointy,pointy_1,linelong,radius;
   int y;
-  boolean click = false; 
+  boolean click = false;  
   public void balloon(float pointx_1, float pointy_1, float radius_1, float linelong_1){
     pointx =pointx_1;
     pointy =pointy_1;
     radius =radius_1;
     linelong =linelong_1;
   }  
-  public void createballoon(){
+  public void createbollon(){
     fill(#EFF7D9);
     ellipse(pointx, pointy, radius*2, radius*2);
-    line(pointx, pointy+(radius), pointx, linelong+pointy+(radius));  
-  }
+    line(pointx, pointy+(radius), pointx, linelong+pointy+(radius));
+    if (mousePressed){
+      click = !click;
+      if(click){
+        y=0;
+      }
+      else{
+        y=1;
+      }
+    }
+}
   public void move(){
     pointy = pointy-y;
     if(pointy<-height/2){
        pointy = height+150;
      }
-     createballoon();
+     createbollon();
   }
 }
 Balloon balloon = new Balloon();
