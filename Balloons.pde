@@ -4,6 +4,8 @@
 //You can click the mouse to stop the balloon. And click to make the balloon move.
 public class Balloon {
   float pointx,pointy,pointy_1,linelong,radius;
+  int y;
+  boolean click = false; 
   public void balloon(float pointx_1, float pointy_1, float radius_1, float linelong_1){
     pointx =pointx_1;
     pointy =pointy_1;
